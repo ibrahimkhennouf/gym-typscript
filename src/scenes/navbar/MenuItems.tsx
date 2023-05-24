@@ -1,5 +1,5 @@
-import Link from "@/scenes/navbar/Link";
-import { SelectedPage } from "./types";
+import Link from "./Link";
+import { SelectedPage } from "@/shared/types";
 
 type Props = {
   selectedPage: SelectedPage;
@@ -7,7 +7,7 @@ type Props = {
 };
 
 export default function MenuItems({ selectedPage, setSelectedPage }: Props) {
-  const staticPageVals = Object.keys(SelectedPage);
+  const staticPageVals = ["Home", "Benefits", "Our Classes", "Contact Us"];
   return (
     <>
       {staticPageVals.map((page, idx: number) => {

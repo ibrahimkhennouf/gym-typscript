@@ -4,7 +4,7 @@ import Logo from "@/assets/Logo.png";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
-import MenuItems from "@/shared/MenuItems";
+import MenuItems from "./MenuItems";
 
 type Props = {
   isTopOfPage: boolean;
